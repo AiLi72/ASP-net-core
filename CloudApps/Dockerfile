@@ -10,7 +10,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["CloudApps/ServerTestApp.csproj", "/src/CloudApps/"]
+COPY ["/var/lib/jenkins/workspace/asp-net-core/CloudApps/ServerTestApp.csproj", "/src/CloudApps/"]
 RUN dotnet restore "CloudApps/ServerTestApp.csproj"
 COPY . .
 WORKDIR "/src/CloudApps"
