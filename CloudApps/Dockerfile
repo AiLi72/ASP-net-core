@@ -1,6 +1,6 @@
 # Author 
-MAINTAINER aili <a.li@defacto.aero>
-#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+# MAINTAINER aili <a.li@defacto.aero>
+# See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
 # Base image
 FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
